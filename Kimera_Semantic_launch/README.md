@@ -1,4 +1,4 @@
-# Kimera Semantics Point Cloud Quick Launch
+# Kimera-Semantics Point Cloud Quick Launch
 
 ### 1. Install the Kimera Semantics library from official repository: [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics).
 
