@@ -2,7 +2,7 @@
 
 ### 1. Install the Kimera Semantics library from official repository: [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics).
 
-### 2. Download dataset from [uHumans 2](https://web.mit.edu/sparklab/datasets/uHumans2/) dataset.
+### 2. Download dataset from [uHumans 2](https://web.mit.edu/sparklab/datasets/uHumans2/) office dataset.
 
 ### 3. Replace the launch file under kimera_semantics_ros/launch with the file provided in this repository, modify the location of dataset in launch file.
 
