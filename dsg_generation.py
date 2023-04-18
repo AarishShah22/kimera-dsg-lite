@@ -1,36 +1,25 @@
-# load required libraries
-# added comment
 import numpy as np
 from numpy import genfromtxt
+from sklearn.neighbors import NearestNeighbors
+import numpy as np
+from array_to_list_pixel_data import label_dict
+import matplotlib.pyplot as plt
+import pickle
+import time
+import tqdm
 
 class DSG_Generation():
 
     def __init__(self, voxel_map, room_constraints): 
 
-        # TODO: 
-        # Add correlations as input
-
         self.voxel_map = voxel_map
-        self.room_constraints = room_constraints # dictionary
+        self.room_constraints = room_constraints 
         self.semantic_labels = genfromtxt('semantic_segmentation_labels.csv',delimiter=',')
         self.dsg = {}
         self.n_buildings = 1
         self.n_rooms = len(room_constraints)
 
-    # def in_room(self, constraints, voxel_coords):
-
-    #     isInRoom = False
-    #     x = constraints["x"]
-    #     y = constraints["y"]
-    #     xlim = constraints["xlim"]
-    #     ylim = constraints["ylim"]
-
-    #     if x<voxel_coords[0]<x+xlim and y<voxel_coords[1]<y+ylim:
-            
-    #         isInRoom = True
-
-    #     return isInRoom
-
+    #### Converting RBG to a specific Semantic id ####
     def rgb_to_id(self):
 
         voxel_map_ = self.voxel_map
@@ -46,13 +35,13 @@ class DSG_Generation():
                 if np.array_equal(rgb, self.semantic_labels[j,1:4]):
                     self.voxel_map[i,3] = self.semantic_labels[j,4]
 
+    #### DSG as a nested dictionary with List of Voxels for every Classification ####
     def initialize_dsg(self):
 
         for i in range(self.n_buildings):
 
             building = {}
             building["walls"] = []
-            building["correlations"] = []
 
             for j in range(self.n_rooms):
 
@@ -66,9 +55,10 @@ class DSG_Generation():
             self.dsg["B"+str(i+1)] = building
 
     def populate_dsg(self):
-
-        for voxel in self.voxel_map:
-
+        c=0
+        from tqdm import tqdm
+        for voxel in tqdm(self.voxel_map):
+            
             semantic_id = voxel[3]
 
             if semantic_id == 19:
@@ -80,30 +70,75 @@ class DSG_Generation():
                 isInRoom = False
 
                 for i in range(self.n_rooms):
-                    constraints = self.room_constraints["R"+str(i+1)]
-                    #check in each room (using search alg) and assign to room
+                    constraints = np.array(self.room_constraints["R"+str(i+1)])
 
-                    voxel_array_xy = np.asarray([voxel[0], voxel[1]])
-                    isInRoom = np.any(np.all(constraints == voxel_array_xy, axis=1))    
+                    voxel_array_xy = np.asarray([voxel[0], voxel[1]]).reshape(1,-1)
+                    #isInRoom = np.any(np.all(constraints == voxel_array_xy, axis=1))
+
+                    if(isInRoom != True):
+                       X = constraints
+                       #### Spatial Constraints ####
+                       nbrs = NearestNeighbors(n_neighbors=1, algorithm='kd_tree').fit(X) #check in each room (using search alg) and assign to room
+                       query_point = voxel_array_xy
+                       distances, indices = nbrs.kneighbors(query_point)
+                       if(distances < 1):
+                        isInRoom = True
+                           
 
                     if isInRoom:
-                        
-                        #check semantic label
+                        #### check semantic label and assign the class ####
                         
                         if semantic_id == 3 or semantic_id == 4:
                             self.dsg["B1"]["R"+str(i+1)]["floors and ceilings"].append(voxel)
                         else:
                             self.dsg["B1"]["R"+str(i+1)]["objects"].append(voxel)
                         break
+        print("For Completed")
+
 
     def print_dsg(self):
 
         print(self.dsg)
 
-voxel_map = np.ones((100,6))
-room_constraints = {"R1":np.ones((100,2)), "R2":np.zeros((100,2))}
+    def save_dict(self):
+        dsg = self.dsg
+        with open('dsg.pickle', 'wb') as f:
+        # use pickle to serialize and save the dictionary to the file
+            pickle.dump(dsg, f)
+
+    def load_dict(self):
+        with open('dsg.pickle', 'rb') as f:
+        # use pickle to deserialize and load the dictionary from the file
+            dsg = pickle.load(f)
+        return dsg
+        
+
+
+
+#### FUNCTION CALLS ####
+
+start_time = time.time()
+voxel_map = np.loadtxt('voxel_color_map_uhuman_complete_0.05_txt.txt')
+#### Voxel Map for Trial Run ####
+# voxel_map = voxel_map[:20000,:]
+
+room_constraints = label_dict
 uhumans_dsg = DSG_Generation(voxel_map, room_constraints)
 uhumans_dsg.rgb_to_id()
 uhumans_dsg.initialize_dsg()
 uhumans_dsg.populate_dsg()
-uhumans_dsg.print_dsg()
+#uhumans_dsg.print_dsg()
+uhumans_dsg.Visualization()
+uhumans_dsg.save_dict()
+dsg_pickle = uhumans_dsg.load_dict()
+print("#########################################################################################")
+
+end_time = time.time()
+
+total_time = end_time - start_time
+
+#Print the total execution time
+print(f"Execution time: {total_time} seconds")
+
+
+
