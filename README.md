@@ -101,7 +101,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   
   
   
-  ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Floors%20and%20Ceilings.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Objects.png)
+  ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Floors%20and%20Ceilings.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Objects.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Walls.png)
 
 ## Authors
 
