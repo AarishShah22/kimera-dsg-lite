@@ -81,12 +81,12 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
 ### Running DSG Lite
 
-#### 1. Download ....
-
-- In desired python environment change
+#### 1. Converting Mesh to Voxel Map
+- Inside DSG folder
 
   ```
-  codes to input
+  python ply_to_voxel.py
+  
   ```
   
   
