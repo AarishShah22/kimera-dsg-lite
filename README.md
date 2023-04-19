@@ -98,8 +98,25 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   ```
   python dsg_generation.py
   ```
-  
-  
+### Get Room label using language model
+
+There is a useful tool in the folder
+
+  ```
+  /toolkit/get_room_label.py
+  ```
+ To use it, you should apply for a OpenAI API key. To set up OpenAI key, you should add a line in the code
+   ```
+  openai_api_key = "your openai key"
+  ```
+ Or set the OpenAI key in your environment
+  ```
+  echo "export OPENAI_API_KEY='yourkey'" >> ~/.zshrc
+  source ~/.zshrc
+  ```
+ 
+ You can also change the language model for better performance like  
+ ["text-davinci-001", "text-davinci-002", "text-curie-001", "text-babbage-001", "text-ada-001"](gpt-3)
   
   ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Floors%20and%20Ceilings.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Objects.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Walls.png)
 
