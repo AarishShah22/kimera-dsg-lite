@@ -12,7 +12,7 @@ The purpose of this github is to provide base code for users of Kimera-Semantics
 <img width="418" alt="Screenshot 2023-04-19 at 1 13 41 AM" src="https://user-images.githubusercontent.com/109474044/232973069-c3e183e4-eb5f-429e-a563-effe56b9b28a.png">
 
 ### Description
-This github repository briefly overviews downloading and running the kimera-semantics module on the uHumans 2 office dataset and generating a .ply file. After some graphical processing, the .ply file then has opencv modules applied to fill in missing boundaries and separate rooms. From here an adjacency matrix is computed in order to display connections between rooms. Next a Dynamic Scene Graphs implementation in python is written which performs the abstraction levels of separate rooms and objects contained within those rooms. Finally, a demonstration of how ChatGPT could be implemented in future work to input labeled objects found in rooms and classify the rooms accordingly. 
+This github repository briefly overviews downloading and running the kimera-semantics module on the uHumans 2 office dataset and generating a .ply file. After some graphical processing, the map file then has opencv modules applied to fill in missing boundaries and separate rooms. From here an adjacency matrix is computed in order to display connections between rooms. Next a Dynamic Scene Graphs implementation in python is written which performs the abstraction levels of separate rooms and objects contained within those rooms. Finally, a demonstration of how ChatGPT could be implemented in future work to input labeled objects found in rooms and classify the rooms accordingly. 
 
 
 ## Getting Started
