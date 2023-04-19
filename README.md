@@ -109,6 +109,10 @@ There is a useful tool in the folder
   ```
   /toolkit/get_room_label.py
   ```
+ There is also a notebook demo to show how to use it
+  ```
+  /toolkit/get_room_label_demo.ipynb
+  ```
  To use it, you should apply for a OpenAI API key. To set up OpenAI key, you should add a line in the code
    ```
   openai_api_key = "your openai key"
@@ -122,7 +126,6 @@ There is a useful tool in the folder
  The default API we use is "gpt-3.5-turbo", you can also change the language model for better performance like "gpt-4-0314" with same interface “openai.ChatCompletion.create“.
  But if you want to you the model below, you should change the interface to "openai.Completion.create". For more information, please follow the instrcution from [OpenAI](https://platform.openai.com/docs/api-reference/completions/create).
  ```
- 
  ["text-davinci-001", "text-davinci-002", "text-curie-001", "text-babbage-001", "text-ada-001"](gpt-3)
  ```
 
