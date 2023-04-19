@@ -14,14 +14,19 @@ An in-depth paragraph about your project and overview of use.
 ## Getting Started
 
 
-
-
-
-
 ### Dependencies
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 * ex. Windows 10
+
+### Download dataset
+```
+cd uhuman_data
+```
+```
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rtuRm7Ej83Dwm6azRR_qhjnRq6fAVjaR**' -O retimestamped_humans_24_long.bag
+```
+
 
 ### Installing
 
