@@ -76,6 +76,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   distance_tolerance = 30
   hold_mat=adj_matrix(df1, distance_tolerance)
   ```
+ ![image](https://user-images.githubusercontent.com/109474044/232984442-1ce64e10-89a8-4acf-b571-0fd71ded1626.png)
 
 ### Running DSG Lite
 
@@ -87,6 +88,8 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
   ```
   
+  
+  ![image](https://user-images.githubusercontent.com/109474044/232984442-1ce64e10-89a8-4acf-b571-0fd71ded1626.png)
 
 ## Authors
 
