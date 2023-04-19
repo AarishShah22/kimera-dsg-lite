@@ -3,6 +3,7 @@
 The purpose of this github is to provide base code for users of Kimera-Semantics to have an elementary implementation of a Dynamic Scenes Graph. After running Kimera-Semantics, a voxel based file is generated that our code categorizes by semantic labels and then visualizes. Additionally, a demonstration is provided about how this DSG can be augmented with the usage of a Generative Preditive Text model for tasks such as a categorizing rooms based on detected features. 
 
 
+
 ![image](https://user-images.githubusercontent.com/109474044/232984442-1ce64e10-89a8-4acf-b571-0fd71ded1626.png)
 
 
@@ -10,10 +11,10 @@ The purpose of this github is to provide base code for users of Kimera-Semantics
 
 <img width="418" alt="Screenshot 2023-04-19 at 1 13 41 AM" src="https://user-images.githubusercontent.com/109474044/232973069-c3e183e4-eb5f-429e-a563-effe56b9b28a.png">
 
+### Description
+This github
 
-## Description
 
-An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
 
