@@ -9,7 +9,7 @@ The purpose of this github is to provide base code for users of Kimera-Semantics
 
 ## Structure
 
-<img width="418" alt="Screenshot 2023-04-19 at 1 13 41 AM" src="https://user-images.githubusercontent.com/109474044/232973069-c3e183e4-eb5f-429e-a563-effe56b9b28a.png">
+<img width="659" alt="Screenshot 2023-04-19 at 4 10 50 PM" src="https://user-images.githubusercontent.com/109474044/233188900-9fe78395-a939-489a-bf55-7286dd38d1b5.png">
 
 ### Description
 This github
