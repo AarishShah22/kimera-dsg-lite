@@ -80,12 +80,12 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
 ### Running DSG Lite
 
-#### 1. Download the room_adjacency_mat.py and labels.np files.
+#### 1. Download ....
 
 - In desired python environment change
 
   ```
-
+  codes to input
   ```
   
   
