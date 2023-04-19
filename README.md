@@ -101,7 +101,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   
   
   
-  ![image](https://user-images.githubusercontent.com/109474044/232984442-1ce64e10-89a8-4acf-b571-0fd71ded1626.png)
+  ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Floors%20and%20Ceilings.png)
 
 ## Authors
 
