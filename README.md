@@ -124,7 +124,7 @@ There is a useful tool in the folder
   ```
  
  The default API we use is "gpt-3.5-turbo", you can also change the language model for better performance like "gpt-4-0314" with same interface “openai.ChatCompletion.create“.
- But if you want to you the model below, you should change the interface to "openai.Completion.create". For more information, please follow the instrcution from [OpenAI](https://platform.openai.com/docs/api-reference/completions/create).
+ But if you want to use the model below, you should change the interface to "openai.Completion.create". For more information, please follow the instrcution from [OpenAI](https://platform.openai.com/docs/api-reference/completions/create).
  ```
  ["text-davinci-001", "text-davinci-002", "text-curie-001", "text-babbage-001", "text-ada-001"](gpt-3)
  ```
