@@ -3,31 +3,8 @@
 The purpose of this github is to provide base code for users of Kimera-Semantics to have an elementary implementation of a Dynamic Scenes Graph. After running Kimera-Semantics, a voxel based file is generated that our code categorizes by semantic labels and then visualizes. Additionally, a demonstration is provided about how this DSG can be augmented with the usage of a Generative Preditive Text model for tasks such as a categorizing rooms based on detected features. 
 
 ## Structure
-* |____Kimera_Semantic_launch
-* | |____README.md
-* | |____kimera_semantics.launch
-* |____utils
-* | |____text_toolkit.py
-* |______pycache__
-* | |____dsg_generation.cpython-310.pyc
-* | |____array_to_list_pixel_data.cpython-310.pyc
-* |____DSG
-* | |____Visualization.py
-* | |____voxel_color_map_uhuman_complete_0.05_txt.txt
-* | |____labels_0.05_latest.npy
-* | |____dsg_generation.py
-* | |____array_to_list_pixel_data.py
-* |____README.md
-* |____configs
-* | |____semantic_segmentation_labels.csv
-* | |____tesse_multiscene_office1_segmentation_mapping.csv
-* |____uhuman_data
-* | |____voxel_color_map_uhuman_complete.ply
-* | |____voxel_color_map_uhuman_complete_0.05_txt.txt
-* |____toolkit
-* | |____room_area_assignment.ipynb
-* | |____rooms_adjacency_mat.py
-* | |____get_room_label.py
+
+<img width="418" alt="Screenshot 2023-04-19 at 1 13 41 AM" src="https://user-images.githubusercontent.com/109474044/232973069-c3e183e4-eb5f-429e-a563-effe56b9b28a.png">
 
 
 ## Description
@@ -52,6 +29,7 @@ An in-depth paragraph about your project and overview of use.
 * Any modifications needed to be made to files/folders
 
 ### Executing program
+
 
 * How to run the program
 * Step-by-step bullets
