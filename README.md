@@ -12,7 +12,8 @@ The purpose of this github is to provide base code for users of Kimera-Semantics
 <img width="418" alt="Screenshot 2023-04-19 at 1 13 41 AM" src="https://user-images.githubusercontent.com/109474044/232973069-c3e183e4-eb5f-429e-a563-effe56b9b28a.png">
 
 ### Description
-This github repository briefly overviews downloading and running the kimera-semantics module on the uHumans 2 office dataset and generating a .ply file. After some graphical processing, the map file then has opencv modules applied to fill in missing boundaries and separate rooms. From here an adjacency matrix is computed in order to display connections between rooms. Next a Dynamic Scene Graphs implementation in python is written which performs the abstraction levels of separate rooms and objects contained within those rooms. Finally, a demonstration of how ChatGPT could be implemented in future work to utilize the different objects found in a room in order to categorize the room type such as a restroom or personal work office.
+This github
+
 
 
 ## Getting Started
@@ -67,7 +68,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
 ### Adjacency Matrix Computation
 
-#### 1. Download the room_adjacency_mat.py and labels.npy files.
+#### 1. Download the room_adjacency_mat.py and labels.np files.
 
 - In desired python environment run the following lines to generate the adjacency matrix. Can also substitute dataset.
 
@@ -79,14 +80,25 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
  ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/combined_adj_plot.png)
 
 ### Running DSG Lite
-
-#### 1. Converting Mesh to Voxel Map
 - Inside DSG folder
 
+#### 1. Converting Mesh to Voxel Map
+
+  - This will convert the mesh grid into a .ply file containing voxels. This file needs to be fed in to the OpenCV algorithm
   ```
   python ply_to_voxel.py
-  
   ```
+#### 2. Building room constraints
+  - Coverting the output of the OpenCV algorithm to room constraints to be used in 'dsg_generation.py'
+  ```
+  python array_to_list_pixel_data.py
+  ```
+#### 3. Running DSG
+  - Run the DSG generation algorithm. First create the .txt file of the Voxel Map from (1). The make sure to have semantic_segmentation_labels.csv in the running folder.
+  ```
+  python dsg_generation.py
+  ```
+  
   
   
   ![image](https://user-images.githubusercontent.com/109474044/232984442-1ce64e10-89a8-4acf-b571-0fd71ded1626.png)
