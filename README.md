@@ -26,7 +26,7 @@ An in-depth paragraph about your project and overview of use.
 * [Open3D](http://www.open3d.org/)
 
 
-### Download dataset
+### Download [uHumans 2](https://web.mit.edu/sparklab/datasets/uHumans2/) dataset
 ```
 cd uhuman_data
 ```
@@ -37,11 +37,9 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
 #### 1. Install the Kimera Semantics library from official repository: [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics).
 
-#### 2. Download dataset from [uHumans 2](https://web.mit.edu/sparklab/datasets/uHumans2/) office dataset.
+#### 2. Replace the launch file under kimera_semantics_ros/launch with the file provided in this repository, modify the location of dataset in launch file.
 
-#### 3. Replace the launch file under kimera_semantics_ros/launch with the file provided in this repository, modify the location of dataset in launch file.
-
-#### 4. Launch Kimera-Semantics with following commands:
+#### 3. Launch Kimera-Semantics with following commands:
 
 - In one terminal, run 
 
