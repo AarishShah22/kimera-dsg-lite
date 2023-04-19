@@ -20,19 +20,6 @@ An in-depth paragraph about your project and overview of use.
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
 Contributors names and contact info
@@ -48,3 +35,5 @@ Zhouyi Yang zyyangzy@umich.edu
 
 Inspiration, code snippets, etc.
 * [MIT-SPARK Kimera-Semantics]https://github.com/MIT-SPARK/Kimera-Semantics
+* [OpenCV Development Partnership {Old)] https://opencv.org/opencv-development-partnership-old/
+* [OpenAi] https://openai.com/blog/chatgpt
