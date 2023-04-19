@@ -71,3 +71,5 @@ Zhouyi Yang zyyangzy@umich.edu
 
 Inspiration, code snippets, etc.
 * [MIT-SPARK Kimera-Semantics]https://github.com/MIT-SPARK/Kimera-Semantics
+* [OpenCV Development Partnership {Old)] https://opencv.org/opencv-development-partnership-old/
+* [OpenAi] https://openai.com/blog/chatgpt
