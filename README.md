@@ -98,6 +98,10 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   ```
   python dsg_generation.py
   ```
+  
+  ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Floors%20and%20Ceilings.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Objects.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Walls.png)
+
+
 ### Get Room label using language model
 
 There is a useful tool in the folder
@@ -115,10 +119,12 @@ There is a useful tool in the folder
   source ~/.zshrc
   ```
  
- You can also change the language model for better performance like  
+ The default API we use is "gpt-3.5-turbo", you can also change the language model for better performance like "gpt-4-0314" with same interface “openai.ChatCompletion.create“.
+ But if you want to you the model below, you should change the interface to "openai.Completion.create". For more information, please follow the instrcution from [OpenAI](https://platform.openai.com/docs/api-reference/completions/create).
+ ```
+ 
  ["text-davinci-001", "text-davinci-002", "text-curie-001", "text-babbage-001", "text-ada-001"](gpt-3)
-  
-  ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Floors%20and%20Ceilings.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Objects.png) ![image](https://github.com/AarishShah22/kimera-dsg-lite/blob/orgnized/DSG/Walls.png)
+ ```
 
 ## Authors
 
