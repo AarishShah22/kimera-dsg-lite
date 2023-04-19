@@ -65,21 +65,12 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   rosservice call /kimera_semantics_node/generate_mesh
   ```
 
-### Executing program
+#For the Adjacency Matrix
+Download the room_adjacency_mat.py and labels.np files
+Run the room_adjacency_mat.py function on labels.npy
+The room_adjacency_mat.py function can be run an similarly formated input array
 
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+#Running the DSG Lite
 
 ## Authors
 
