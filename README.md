@@ -11,10 +11,6 @@ The purpose of this github is to provide base code for users of Kimera-Semantics
 
 <img width="659" alt="Screenshot 2023-04-19 at 4 10 50 PM" src="https://user-images.githubusercontent.com/109474044/233188900-9fe78395-a939-489a-bf55-7286dd38d1b5.png">
 
-### Description
-This github
-
-
 
 ## Getting Started
 
