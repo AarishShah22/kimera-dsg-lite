@@ -21,6 +21,9 @@ An in-depth paragraph about your project and overview of use.
 ### Dependencies
 
 * Ubuntu 18.04.6 LTS
+* [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics)
+* python-opencv
+* [Open3D](http://www.open3d.org/)
 
 
 ### Download dataset
