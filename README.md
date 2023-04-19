@@ -69,7 +69,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
 #### 1. Download the room_adjacency_mat.py and labels.np files.
 
-- In desired python environment run
+- In desired python environment run the following lines to generate the adjacency matrix. Can also substitute dataset.
 
   ```
   df1 =np.load('labels.npy')
