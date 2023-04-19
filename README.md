@@ -65,11 +65,18 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   rosservice call /kimera_semantics_node/generate_mesh
   ```
 
-#For the Adjacency Matrix
-Download the room_adjacency_mat.py and labels.np files
-Run the room_adjacency_mat.py function on labels.npy
-The room_adjacency_mat.py function can be run an similarly formated input array
+### Adjacency Matrix Computation
 
+#### 1. Download the room_adjacency_mat.py and labels.np files.
+
+- In Terminal run
+
+  ```
+  df1 =np.load('labels.npy')
+  distance_tolerance = 30
+  hold_mat=adj_matrix(df1, distance_tolerance)
+  ```
+  
 #Running the DSG Lite
 
 ## Authors
