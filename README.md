@@ -67,7 +67,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
 
 ### Adjacency Matrix Computation
 
-#### 1. Download the room_adjacency_mat.py and labels.np files.
+#### 1. Download the room_adjacency_mat.py and labels.npy files.
 
 - In desired python environment run the following lines to generate the adjacency matrix. Can also substitute dataset.
 
