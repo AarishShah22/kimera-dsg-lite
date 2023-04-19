@@ -22,7 +22,7 @@ An in-depth paragraph about your project and overview of use.
 
 * Ubuntu 18.04.6 LTS
 * [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics)
-* python-opencv
+* [opencv-python](https://pypi.org/project/opencv-python/)
 * [Open3D](http://www.open3d.org/)
 
 
