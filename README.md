@@ -65,13 +65,6 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=**1rt
   rosservice call /kimera_semantics_node/generate_mesh
   ```
 
-  
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
 ### Executing program
 
 
