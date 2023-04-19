@@ -1,4 +1,4 @@
-# kimera-dsg-lite
+<!-- # kimera-dsg-lite
 
 The purpose of this github is to provide base code for users of Kimera-Semantics to have an elementary implementation of a Dynamic Scenes Graph. After running Kimera-Semantics, a voxel based file is generated that our code categorizes by semantic labels and then visualizes. Additionally, a demonstration is provided about how this DSG can be augmented with the usage of a Generative Preditive Text model for tasks such as a categorizing rooms based on detected features. 
 
@@ -36,4 +36,4 @@ Zhouyi Yang zyyangzy@umich.edu
 Inspiration, code snippets, etc.
 * [MIT-SPARK Kimera-Semantics]https://github.com/MIT-SPARK/Kimera-Semantics
 * [OpenCV Development Partnership {Old)] https://opencv.org/opencv-development-partnership-old/
-* [OpenAi] https://openai.com/blog/chatgpt
+* [OpenAi] https://openai.com/blog/chatgpt -->
